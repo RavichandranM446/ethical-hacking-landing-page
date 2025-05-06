@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ethical Hacking</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Share Tech Mono', monospace;
+      background-color: #0d0d0d;
+      color: #00ffcc;
+    }
+
+    header {
+      background-color: #111;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #00ffcc33;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #00ffcc;
+      font-size: 1.8rem;
+    }
+
+    nav a {
+      color: #00ffcc;
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    .hero {
+      padding: 100px 20px;
+      text-align: center;
+      background: linear-gradient(120deg, #0f0f0f, #111111);
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: auto;
+      color: #00ffccaa;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .section h3 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: #1a1a1a;
+      padding: 30px;
+      border: 1px solid #00ffcc33;
+      border-radius: 10px;
+      width: 250px;
+      color: #eee;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      border-color: #00ffcc;
+    }
+
+    .btn {
+      margin-top: 30px;
+      background-color: #00ffcc;
+      color: #111;
+      padding: 12px 24px;
+      border: none;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #00ffcc88;
+      border-top: 1px solid #00ffcc33;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>CyberShielder</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">Process</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" data-aos="fade-up">
+    <h2>We Hack For Good</h2>
+    <p>Protecting digital frontiers through ethical hacking, penetration testing, and cybersecurity solutions.</p>
+  </section>
+
+  <section class="section" data-aos="fade-up">
+    <h3>Our Services</h3>
+    <div class="cards">
+      <div class="card" data-aos="zoom-in">
+        <h4>Penetration Testing</h4>
+        <p>Simulate real-world attacks to find and fix security flaws.</p>
+      </div>
+      <div class="card" data-aos="zoom-in">
+        <h4>Bug Bounty</h4>
+        <p>Incentivize hackers to report bugs before criminals exploit them.</p>
+      </div>
+      <div class="card" data-aos="zoom-in">
+        <h4>Security Audits</h4>
+        <p>Complete inspection of systems and networks for vulnerabilities.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" data-aos="fade-up">
+    <h3>How We Work</h3>
+    <div class="cards">
+      <div class="card" data-aos="fade-right">
+        <h4>Step 1</h4>
+        <p>Gather project scope and risks.</p>
+      </div>
+      <div class="card" data-aos="fade-up">
+        <h4>Step 2</h4>
+        <p>Launch ethical hack tests and simulate threats.</p>
+      </div>
+      <div class="card" data-aos="fade-left">
+        <h4>Step 3</h4>
+        <p>Submit vulnerability report with solutions.</p>
+      </div>
+    </div>
+    <button class="btn" onclick="alert('Let\'s secure your system!')">Secure Now</button>
+  </section>
+
+  <footer>
+    &copy; 2025 CyberShielder | Ethical Hacking Solutions
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
